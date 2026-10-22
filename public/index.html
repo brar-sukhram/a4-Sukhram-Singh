@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Langara Pizza</h1>
+        <p class="tagline">Online Order Form</p>
+    </header>
+
+    <form action="/orders" method="POST">
+
+        <fieldset>
+            <legend>Design Your Pizza!</legend>
+
+            <fieldset>
+                <legend>Sauce</legend>
+
+                <label>
+                    Tomato
+                    <input type="radio" name="sauce"
+                           value="tomato" checked>
+                </label>
+
+                <label>
+                    Alfredo
+                    <input type="radio" name="sauce"
+                           value="alfredo">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Toppings</legend>
+
+                <label>
+                    Pepperoni
+                    <input type="checkbox" name="toppings"
+                           value="pepperoni">
+                </label>
+
+                <label>
+                    Ham
+                    <input type="checkbox" name="toppings"
+                           value="ham">
+                </label>
+
+                <label>
+                    Vegetarian Sausage
+                    <input type="checkbox" name="toppings"
+                           value="vegetarian sausage">
+                </label>
+
+                <label>
+                    Mushrooms
+                    <input type="checkbox" name="toppings"
+                           value="mushrooms">
+                </label>
+
+                <label>
+                    Peppers
+                    <input type="checkbox" name="toppings"
+                           value="peppers">
+                </label>
+
+                <label>
+                    Olives
+                    <input type="checkbox" name="toppings"
+                           value="olives">
+                </label>
+
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Info</legend>
+
+            <label>
+                Your name:
+                <input type="text" name="name">
+            </label>
+
+            <label>
+                Email:
+                <input type="text" name="email">
+            </label>
+
+        </fieldset>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <form action="/" method="GET" id="color-form">
+        <label>
+            Change background color:
+            <input type="color" name="color">
+        </label>
+
+        <button>Submit</button>
+    </form>
+
+</body>
+</html>

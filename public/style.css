@@ -1,0 +1,54 @@
+html {
+    font-family: sans-serif;
+    line-height: 1.7;
+}
+
+h1 {
+    color: salmon;
+    font-size: 6rem;
+    margin: 0;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    color: rgb(106 90 206);
+    margin-top: 0;
+}
+
+header {
+    margin-bottom: 6rem;
+}
+
+body {
+    max-width: 801px;
+    margin: auto;
+}
+
+legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(106 90 206)
+}
+
+label {
+    display: inline-block;
+    border: 1px dotted rgb(106 90 206);
+    padding: 0.5em;
+    margin: 0.3em 0.31em 0 0;
+    border-radius:0.3em;
+}
+
+dl {
+    color: darkred;
+}
+
+dt {
+    font-weight: bold;
+}
+
+#color-form {
+    position: fixed;
+    bottom:0;
+    right:0;
+    background-color: white;
+}

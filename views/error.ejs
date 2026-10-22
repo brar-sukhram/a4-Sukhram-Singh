@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Order Error</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Langara Pizza</h1>
+        <p class="tagline">Online Order Form</p>
+    </header>
+
+    <a href="/">Home</a>
+    
+    <h2>Order Validation Failed</h2>
+
+    <p>Please correct the following errors:</p>
+
+    <dl>
+        <% errors.forEach((error) => { %>
+
+            <dt><%= error.field %></dt>
+            <dd><%= error.message %></dd>
+
+        <% }); %>
+    </dl>
+
+</body>
+</html>
